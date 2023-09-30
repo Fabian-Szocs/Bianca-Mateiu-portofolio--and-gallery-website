@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif; 
+}
+
+body{
+  background: #272c35;
+}
+
+title{
+  color: black;
+  font-size: 100px;
+  margin-top: 100px;
+}
+
+.container{
+  margin-top: 80px;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 30px;
+}
+
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-gap: 30px;
+}
+
+.gallery img{
+  width: 70%;
+  box-shadow: 0 0 10px rgb(187, 186, 186);
+}
+
+.gallery img:hover{
+  box-shadow: 0 0 10px rgb(119, 119, 119);
+}
+
+
+
+
+.header{
+ 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  padding: 2rem 9%;
+  background: #1f242d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.header.sticky{
+  border-bottom: .1rem solid rgba(0,0,0, .2);
+}
+
+.logo{
+   font-size: 2.8rem;
+    color: white;
+    font-weight:lighter;
+    cursor: pointer;
+    font-family: 'Parisienne', cursive;
+}
+
+
